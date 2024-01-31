@@ -1,6 +1,6 @@
 'use client';
 import './header.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, SetStateAction } from 'react';
 import { Link, animateScroll } from 'react-scroll';
 import Image from 'next/image';
 import Caique_wav_logo from "../../../../public/assets/images/caique_wav_logo.png";
@@ -36,7 +36,7 @@ function Header(){
     };
   }, []);
 
-  const handleLinkClick = (to) => {
+  const handleLinkClick = (to: SetStateAction<string>) => {
     animateScroll.scrollToTop();
     setCurrentSection(to);
   };
