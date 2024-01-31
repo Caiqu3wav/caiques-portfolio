@@ -1,0 +1,10 @@
+.about-section{
+    background-image: url('../../../../public/assets/images/bf-about.png');
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
