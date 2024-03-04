@@ -5,38 +5,83 @@ import { MdOutlineMoreTime } from "react-icons/md";
 import { PiWhatsappLogoDuotone } from "react-icons/pi";
 import CaiqueAnmPicAbout from "../../../../public/assets/caique_anime/Caique-character16(producing).png";
 import Image from 'next/image';
-
+import CardsGame from "../../../../public/assets/images/catasgif.gif";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaNode } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { SiFirebase } from "react-icons/si";
+import { FaFileDownload } from "react-icons/fa";
 
 function About(){
     return(
-      <section className="about-section">
-    <h1 className="text-3xl font-bold">Mais sobre mim</h1>
-    <div className="flex">
-      <div className="flex flex-col items-center w-[300px] h-[400px] bg-opaco-black border-l-blue-400
-       border-t-blue-400 border-solid border-2 rounded-tl-[100px] rounded-br-[100px]">
+      <section className="about-section ">
+    <h1 className="text-3xl font-bold mb-2 midtwo2:mt-4 midtwo3:mt-7 lowone:mt-11">Mais sobre mim</h1>
+    <div className="flex w-full justify-around gap-3">
+      <div className="flex flex-col items-center w-[300px] h-[400px] majorthree:h-[510px] majorthree:gap-5 bg-black bg-opacity-35 border-l-blue-400
+       border-t-blue-400 border-solid border-2 rounded-tl-[100px] rounded-br-[100px] majorthree1:h-[400px] midfour:w-[250px] majorthree1:gap-1 midfour:h-[450px] ">
             <Image className="rounded-xl w-[120px] mt-6" src={CaiqueAnmPicAbout} alt="" />
-            <h1 className="font-bold">Caique</h1>
-            <h2>Desenvolvedor full-stack</h2>
-            <div className="flex flex-col gap-3">
-              <div className="flex gap-3">
-              <MdAttachEmail color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p>asapcaique@gmail.com</p>
+            <h1 className="font-bold text-blue-400 text-2xl">Caique</h1>
+            <h2 className='font-semibold majortwo4:text-xs'>Desenvolvedor full-stack</h2>
+            <div className="personal-card flex flex-col gap-3">
+              <div className="flex gap-3 midfour:gap-1">
+              <MdAttachEmail color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>asapcaique@gmail.com</p>
               </div>
-              <div className="flex gap-3">
-              <MdLocalAirport color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p>Brasil</p>
+              <div className="flex gap-3 midfour:gap-1">
+              <MdLocalAirport color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>Brasil</p>
               </div>
-              <div className="flex gap-3">
-              <MdOutlineMoreTime color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p>Full-time/Freelancer</p>
+              <div className="flex gap-3 midfour:gap-1">
+              <MdOutlineMoreTime color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>Full-time/Freelancer</p>
               </div>
-              <div className="flex gap-3">
-              <PiWhatsappLogoDuotone color="rgba(39, 245, 238, 0.8)" className="mt-2" /><a className="text-white underline underline-offset-4" target='_blank' href=" https://wa.me/12997364432">(12) 997364432</a>
+              <div className="flex gap-3 midfour:gap-1">
+              <PiWhatsappLogoDuotone color="rgba(39, 245, 238, 0.8)" className="mt-2" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/12997364432">(12) 997364432</a>
               </div>
+              <button className="text-black flex w-[70%] py-2 bg-slate-100 gap-3
+               items-center justify-center rounded-xl">CVV <FaFileDownload/></button>
               </div>
              </div>
-             <div className="flex flex-col gap-6"><h1 className="font-bold text-[48px]">Quem <br /> É <span className="text-blue-400">Caique</span>, <br /> Como Desenvolvedor?</h1>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro quaerat esse provident
-               delectus est nulla! Mollitia, eligendi delectus minima molestias doloribus eaque! Ipsam consectetur blanditiis sed, porro in placeat!</p>
-               <p className="text-blue-400 font-extrabold text-[54px]">Bora <br /> negociar?</p>
-    </div></div> 
+             <div className="flex flex-col gap-6 w-[570px] majortwo1:w-[530px] midtw:gap-2"><h1 className="font-bold text-[48px] majortwo:text-[40px] majortwo4:text-[32px] midtw:text-[26px] low:text-[23px]">Quem <br /> É <span className="text-blue-400">Caique</span>, <br /> Como Desenvolvedor?</h1>
+             <p className='midtwo:text-[15px]'>Tenho 19 anos e sou desenvolvedor web. Soube mais da programação durante o curso técnico, decidindo aprofundar-me nesse universo. Meu objetivo é construir o que imagino,
+               explorando todo o potencial da tecnologia. Gosto da mistura de criatividade e solução de problemas que abrangem a área. Estou em constante busca por aprendizado e inovação
+                para transformar ideias em realidade.</p>
+               <p className="text-blue-400 font-extrabold text-[54px] majortwo:text-[46px] majortwo4:text-[37px] majorthree1:hidden">Bora <br /> negociar?</p>
+    </div>
+    <div className='flex flex-col items-center justify-center w-[300px] bg-black bg-opacity-35 rounded-xl border-solid border-white
+     border-2 pb-2 majorthree1:hidden'>
+      <Image src={CardsGame} alt='cards gif'/>
+      <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>
+      <h2 className='text-sm'>(Minhas principais stacks)</h2>
+      <div className='grid grid-cols-2 gap-4'>
+      <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p>React.JS</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='text-[50px]'/> <p>Next.JS</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandJavascript  className='text-[50px] text-yellow-400'/> <p>JavaScript</p></div>
+        <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p>Node.JS</p></div>
+        <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p>MongoDB</p></div>
+        <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p>Java</p></div>
+        <div className='flex flex-col items-center text-center'><SiFirebase  className='text-[50px] text-red-500'/> <p>Firebase</p></div>
+        <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p>TypeScript</p></div>
+        </div>
+    </div>
+    </div> 
+    <div className='flex-col hidden items-center justify-center bg-black bg-opacity-35 rounded-xl border-solid border-white
+     border-2 pb-2 w-[70%] mt-3 majorthree1:flex'>
+      <Image src={CardsGame} className='w-[200px]' alt='cards gif'/>
+      <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>
+      <h2 className='text-sm'>(Minhas principais stacks)</h2>
+      <div className='grid grid-cols-4 gap-4'>
+      <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p>React.JS</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='text-[50px]'/> <p>Next.JS</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandJavascript  className='text-[50px] text-yellow-400'/> <p>JavaScript</p></div>
+        <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p>Node.JS</p></div>
+        <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p>MongoDB</p></div>
+        <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p>Java</p></div>
+        <div className='flex flex-col items-center text-center'><SiFirebase  className='text-[50px] text-red-500'/> <p>Firebase</p></div>
+        <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p>TypeScript</p></div>
+        </div>
+    </div>
       </section>
     );
 }

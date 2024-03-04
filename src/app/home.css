@@ -1,0 +1,15 @@
+.bg-cont{
+    background: url(../../public/assets/images/bghomefull2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 798px) {
+    .bg-cont{
+        background: url(../../public/assets/images/bgmobilehom.png);
+        background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+}

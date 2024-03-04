@@ -2,11 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
 .hero-section{
-    background-image: url('/assets/images/port-purple-bg_hero.png');
     height: 660px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .top-shadow{
@@ -47,8 +43,85 @@
     bottom: 10px;
 }
 
+@media screen and (max-width: 800px) {
+    
+
+.hero_content h1{
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+    font-family: 'Silkscreen';
+    position: relative;
+    bottom: 10px;
+}
+}
+
+@media screen and (max-width: 800px) {
+    
+
+    .hero_content h1{
+        font-size: 3rem;
+        letter-spacing: 0.6rem;
+        font-family: 'Silkscreen';
+        position: relative;
+        bottom: 10px;
+    }
+    }
+
+    @media screen and (max-width: 516px) {
+    
+
+        .hero_content h1{
+            font-size: 2.8rem;
+            letter-spacing: 0.6rem;
+            font-family: 'Silkscreen';
+            position: relative;
+            bottom: 0px;
+            margin-top: 20px;
+        }
+        }
+    
+    @media screen and (max-width: 459px) {
+    
+
+        .hero_content h1{
+            font-size: 2.6rem;
+            letter-spacing: 0.6rem;
+            font-family: 'Silkscreen';
+            position: relative;
+            bottom: 0px;
+            margin-top: 30px;
+        }
+        }
+
+        @media screen and (max-width: 400px) {
+    
+
+            .hero_content h1{
+                font-size: 2.1rem;
+                letter-spacing: 0.6rem;
+                font-family: 'Silkscreen';
+                position: relative;
+                bottom: 0px;
+                margin-top: 36px;
+            }
+            }
+
 .hero-1-content{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.rot{
+    animation: rotation infinite 3s linear;
+}
+
+
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    } to{
+        transform: rotate(360deg);
+    }
 }

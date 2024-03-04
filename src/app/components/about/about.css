@@ -1,10 +1,22 @@
 .about-section{
-    background-image: url('../../../../public/assets/images/bf-about.png');
     height: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .about-section{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+}
+
+.personal-card button{
+        transition: all 1s;    
+}
+
+.personal-card button:hover{
+    background-color: rgb(0, 162, 255);
+    color: white;
 }
