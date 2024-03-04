@@ -16,7 +16,7 @@ function Hero(){
             <div className="hero_content">
             <h1 className="">CAIQU3_WAV</h1>
             <h2 className=" midtwo3:text-xs">A ODÍSSEIA DE UM DESENVOLVEDOR FULL-STACK</h2>
-            <Image src={CaiqueAnmPic} alt="Caique" className=" majorfour1:mt-4 lowone:mt-9" />
+            <Image src={CaiqueAnmPic} alt="Caique" className=" majorfour1:mt-4 low:mt-6 lowone:mt-9" />
             <div className="hero-1-content flex flex-col">
             <p>Seja bem vindo ao meu portfolio.</p>
             <p>Sou um programador web que enxerga a técnologia como <br /> oportunidades intermináveis
