@@ -22,7 +22,7 @@ function Hero(){
             <Image src={CaiqueAnmPic} alt="Caique" className=" majorfour1:mt-4 low:mt-6 lowone:mt-9" />
             <div className="hero-1-content flex flex-col">
             <p>Seja bem vindo ao meu portfolio.</p>
-            <p>Sou um programador web que enxerga a técnologia como <br /> oportunidades intermináveis
+            <p className="gsapbk1">Sou um programador web que enxerga a técnologia como <br /> oportunidades intermináveis
               e uma ferramenta para transformar idéias em realidade.
             </p>
             <GiAbstract066 className="rot text-[45px] self-center text-blue-300"/>

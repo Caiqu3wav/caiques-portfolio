@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 *,
 *::before,
 *::after {
@@ -10,20 +12,13 @@
   --color-tertiary: #18c4bb;
   --color-quaternary: #173947;
   --color-quinary: #0b1306;
-  /*
-  --color-primary: #5192ED;
-  --color-secondary: #69A1F0;
-  --color-tertiary: #7EAEF2;
-  --color-quaternary: #90BAF5;
-  --color-quinary: #A2C4F5;
-  */
 }
 
 
 .text-shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  font-family: bungee, sans-serif;
+  font-family: 'Silkscreen';
   font-weight: 400;
   text-transform: uppercase;
   font-size: calc(2rem + 5vw);
@@ -32,7 +27,7 @@
   color: var(--color-primary);
   color: transparent;
   background-color: white;
-background-clip: text;
+  background-clip: text;
   animation: shadows 2s ease-in infinite, move 2s ease-in infinite;
   letter-spacing: 0.4rem;
 }

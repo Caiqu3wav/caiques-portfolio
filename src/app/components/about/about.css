@@ -21,3 +21,7 @@
     color: white;
 }
 
+.about-info-container{
+    transform: translateX(-300px) rotate(-180deg);
+    opacity: 0;
+}

@@ -1,3 +1,4 @@
+'use client'
 import './about.css';
 import { MdAttachEmail } from "react-icons/md";
 import { MdLocalAirport } from "react-icons/md";
@@ -18,13 +19,33 @@ import { FaFileDownload } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useLayoutEffect } from 'react';
 
 function About(){
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.to(".about-info-container", {
+      x: 0,
+      opacity: 1,
+      rotate: "0deg",
+      scrollTrigger:{
+        trigger: ".about-section",
+        markers: true,
+        start: "top 600px", end: "bottom 800px",
+        scrub: true,
+      }
+    })
+    return () => {
+      gsap.killTweensOf(".about-info-container")
+    }
+  }, [])
+
     return(
-      <section id="about" className="about-section ">
+      <section id="about" className="about-section">
     <h1 className="text-3xl font-bold mb-2 midtwo2:mt-4 midtwo3:mt-7 low:mt-0 lowone:mt-11">Mais sobre mim</h1>
     <div className="flex w-full justify-around gap-3">
-      <div className="flex flex-col items-center w-[300px] h-[400px] majorthree:h-[510px] majorthree:gap-5 bg-black bg-opacity-35 border-l-blue-400
+      <div className="about-info-container flex flex-col items-center w-[300px] h-[400px] majorthree:h-[510px] majorthree:gap-5 bg-black bg-opacity-35 border-l-blue-400
        border-t-blue-400 border-solid border-2 rounded-tl-[100px] rounded-br-[100px] majorthree1:h-[400px] midfour:w-[250px] majorthree1:gap-1 midfour:h-[450px] midfour:ml-2">
             <Image className="rounded-xl w-[120px] mt-6 midfour:w-[100px]" src={CaiqueAnmPicAbout} alt="" />
             <h1 className="font-bold text-blue-400 text-2xl">Caique</h1>
