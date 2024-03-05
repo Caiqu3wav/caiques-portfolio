@@ -60,8 +60,8 @@ function Header(){
                     <ul className='midtw:hidden'>
 <Link href='/'><li>Home</li></Link>
 <Link href='#about'><li>Sobre</li></Link>
-<Link href='projects'><li>Projetos</li></Link>
-<Link href='contact'><li>Contato</li></Link>
+<Link href='#projects'><li>Projetos</li></Link>
+<Link href='#contact'><li>Contato</li></Link>
                     </ul>
                     <button aria-label="Open Menu" onClick={toggleMenu} className="btn-hamburguer hidden ml-[70%] midtw:flex">
                 <GiHamburgerMenu size={60} className="text-blue-400" />

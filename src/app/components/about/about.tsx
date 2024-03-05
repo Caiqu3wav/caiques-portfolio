@@ -15,6 +15,9 @@ import { FaJava } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { FaFileDownload } from "react-icons/fa";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 function About(){
     return(

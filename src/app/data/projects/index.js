@@ -19,14 +19,14 @@ export const projects = [
         id: 3,
         name: 'Discover Personality',
         descr: 'Site sobre personalidades MBTI e teste de personalidade',
-        img: '/assets/projectsimg/discoverpersonality.png',
-        link: 'https://actual-coding.vercel.app'
+        img: '/assets/projectsimg/discoverypersonality.png',
+        link: 'https://discoverpersonality.vercel.app'
     },
     {
         id: 4,
         name: 'Cuba Personal',
         descr: 'Site freelance para um personal trainer',
         img: '/assets/projectsimg/cubapersonal.png',
-        link: 'https://actual-coding.vercel.app'
+        link: 'https://cuba-personal.vercel.app'
     },
 ]
