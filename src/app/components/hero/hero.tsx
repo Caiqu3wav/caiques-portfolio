@@ -4,6 +4,7 @@ import CaiqueAnmPic from "../../../../public/assets/caique_anime/Caique-characte
 import Image from 'next/image';
 import { useAnimateKeyframes, AnimateKeyframes } from "react-simple-animate";
 import { GiAbstract066 } from "react-icons/gi";
+import "./title.css"
 
 function Hero(){
 
@@ -14,8 +15,10 @@ function Hero(){
             <div className="top-shadow"></div>
             <div className="hero_container1">
             <div className="hero_content">
-            <h1 className="">CAIQU3_WAV</h1>
-            <h2 className=" midtwo3:text-xs">A ODÍSSEIA DE UM DESENVOLVEDOR FULL-STACK</h2>
+              <div className="hero-titles flex flex-col items-center text-center big:gap-5 bigtwo:gap-2 bigtwo2:gap-0">
+            <h1 className="text-shadows big:h-[80px]">CAIQU3_WAV</h1>
+            <h2 className="midtwo3:text-xs">A ODÍSSEIA DE UM DESENVOLVEDOR FULL-STACK</h2>
+            </div>
             <Image src={CaiqueAnmPic} alt="Caique" className=" majorfour1:mt-4 low:mt-6 lowone:mt-9" />
             <div className="hero-1-content flex flex-col">
             <p>Seja bem vindo ao meu portfolio.</p>

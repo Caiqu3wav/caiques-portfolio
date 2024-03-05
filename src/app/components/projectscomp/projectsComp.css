@@ -1,0 +1,10 @@
+.blog-image{
+    align-self: center !important;
+}
+
+.projects-container{
+    background: url(../../../../public/assets/images/illustration-background-hill-landscape-with-pines-and-cypresses-night-scenery-with-moon-in-dark-blue-sky-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

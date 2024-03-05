@@ -43,7 +43,11 @@
     bottom: 10px;
 }
 
-
+@media screen and (min-width: 1380px) {
+    .hero_content h1{
+        bottom: 35px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     

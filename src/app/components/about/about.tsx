@@ -18,14 +18,14 @@ import { FaFileDownload } from "react-icons/fa";
 
 function About(){
     return(
-      <section className="about-section ">
+      <section id="about" className="about-section ">
     <h1 className="text-3xl font-bold mb-2 midtwo2:mt-4 midtwo3:mt-7 low:mt-0 lowone:mt-11">Mais sobre mim</h1>
     <div className="flex w-full justify-around gap-3">
       <div className="flex flex-col items-center w-[300px] h-[400px] majorthree:h-[510px] majorthree:gap-5 bg-black bg-opacity-35 border-l-blue-400
-       border-t-blue-400 border-solid border-2 rounded-tl-[100px] rounded-br-[100px] majorthree1:h-[400px] midfour:w-[250px] majorthree1:gap-1 midfour:h-[450px] ">
-            <Image className="rounded-xl w-[120px] mt-6" src={CaiqueAnmPicAbout} alt="" />
+       border-t-blue-400 border-solid border-2 rounded-tl-[100px] rounded-br-[100px] majorthree1:h-[400px] midfour:w-[250px] majorthree1:gap-1 midfour:h-[450px] midfour:ml-2">
+            <Image className="rounded-xl w-[120px] mt-6 midfour:w-[100px]" src={CaiqueAnmPicAbout} alt="" />
             <h1 className="font-bold text-blue-400 text-2xl">Caique</h1>
-            <h2 className='font-semibold majortwo4:text-xs'>Desenvolvedor full-stack</h2>
+            <h2 className='font-semibold majortwo4:text-xs midfour:ml-1'>Desenvolvedor full-stack</h2>
             <div className="personal-card flex flex-col gap-3">
               <div className="flex gap-3 midfour:gap-1">
               <MdAttachEmail color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>asapcaique@gmail.com</p>

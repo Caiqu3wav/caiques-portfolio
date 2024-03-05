@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     screens:{
+      'bigtwo2': {'min': '1380px'},
+      'bigtwo': {'min': '1360px'},
+      'big': {'min': '1316px'},
       'major': {'max': '1260px'},
       'major1': {'max': '1240px'},
       'majortwo': {'max': '1235px'},

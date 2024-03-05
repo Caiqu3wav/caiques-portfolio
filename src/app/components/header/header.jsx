@@ -58,10 +58,10 @@ function Header(){
               <Image src={Caique_wav_logo} className='w-[100px]' alt='caique_wav logo'/>
                 <nav className='mr-[24%] majortwo1:mr-[18%] majortwo3:mr-[14%] majorthree2:mr-[8%]'>
                     <ul className='midtw:hidden'>
-<li>Home</li> 
-<li>Sobre</li>
-<li>Projetos</li>
-<li>Contato</li>
+<Link href='/'><li>Home</li></Link>
+<Link href='#about'><li>Sobre</li></Link>
+<Link href='projects'><li>Projetos</li></Link>
+<Link href='contact'><li>Contato</li></Link>
                     </ul>
                     <button aria-label="Open Menu" onClick={toggleMenu} className="btn-hamburguer hidden ml-[70%] midtw:flex">
                 <GiHamburgerMenu size={60} className="text-blue-400" />
