@@ -10,17 +10,32 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Projects() {
     useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
+        gsap.registerPlugin(ScrollTrigger);
+
+        let mm = gsap.matchMedia(), breakPoint = 800, breakPointH = 1030;
+
+    mm.add(
+      {
+        isDesktop: `(min-width: ${breakPoint}px)`,
+        isMobile: `(max-width: ${breakPoint - 1}px)`,
+        isPad: `(min-height: ${breakPointH}px)`
+      },
+      (context) => {
+      let { isDesktop, isMobile, isPad } = context.conditions;
+      
         gsap.to(".projects-intros", {
           y: 0,
           opacity: 1,
           rotate: "0deg",
           scrollTrigger:{
             trigger: ".projects-container",
-            start: "top 800px", end: "bottom 1000px",
+            start: isPad ? "top 1200px" : isMobile ? "top 1400px" : "top 700px",
+             end: isPad ? "bottom 1400px" : isMobile ? "bottom 1500px" : "bottom 900px",
             scrub: true,
           }
         })
+      }
+    )
       }, [])
 
     return(

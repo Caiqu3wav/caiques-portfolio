@@ -54,7 +54,7 @@ function About(){
       rotate: "0deg",
       scrollTrigger:{
         trigger: ".about-section",
-        start: "top 500px", end: "bottom 650px",
+        start: "top 500px", end: "bottom 540px",
         scrub: true,
       }
     })
@@ -64,7 +64,7 @@ function About(){
       rotate: "0deg",
       scrollTrigger:{
         trigger: ".about-section",
-        start: "top 600px", end: "bottom 800px",
+        start: "top 600px", end: "bottom 660px",
         scrub: true,
       }
     })
