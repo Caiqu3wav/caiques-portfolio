@@ -30,9 +30,11 @@ function About(){
     mm.add(
       {
         isDesktop: `(min-width: ${breakPoint}px)`,
-        isMobile: `(max-width: ${breakPoint - 1}px)`
+        isMobile: `(max-width: ${breakPoint - 1}px)`,
+        isPad: `(min-height: ${breakPoint - 1}px)`
       },
       (context) => {
+      let { isDesktop, isMobile, isPad } = context.conditions;
       
     gsap.to(".about-info-container", {
       x: 0,
@@ -40,12 +42,12 @@ function About(){
       rotate: "0deg",
       scrollTrigger:{
         trigger: ".about-section",
-        start: "top 600px", end: "bottom 800px",
+        start: isDesktop ? "top 600px" : "top 850px",
+         end: isDesktop ? "bottom 800px" : "bottom 1000px",
         scrub: true,
       }
     })
-  }
-  )
+
     gsap.to(".texts-about-center", {
       x: 0,
       opacity: 1,
@@ -66,6 +68,18 @@ function About(){
         scrub: true,
       }
     })
+    gsap.to(".below-skills", {
+      x: 0,
+      opacity: 1,
+      rotate: "0deg",
+      scrollTrigger:{
+        trigger: ".about-section",
+        start: isPad ? "top 700px" : "top 400px", end: isPad ? "bottom 800px" : "bottom 600px",
+        scrub: true,
+      }
+    })
+  }
+  )
     return () => {
       gsap.killTweensOf(".about-info-container", ".texts-about-center")
     }
@@ -122,7 +136,7 @@ function About(){
         </div>
     </div>
     </div> 
-    <div className='flex-col hidden items-center justify-center bg-black bg-opacity-35 rounded-xl border-solid border-white
+    <div className='below-skills opacity-0 flex-col hidden items-center justify-center bg-black bg-opacity-35 rounded-xl border-solid border-white
      border-2 pb-2 w-[70%] mt-3 majorthree1:flex  midtwo:w-[88%]'>
       <Image src={CardsGame} className='w-[200px]' alt='cards gif'/>
       <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>
