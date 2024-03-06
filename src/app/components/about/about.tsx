@@ -33,7 +33,6 @@ function About(){
         isMobile: `(max-width: ${breakPoint - 1}px)`
       },
       (context) => {
-        let { isDesktop, isMobile } = context.conditions;
       
     gsap.to(".about-info-container", {
       x: 0,
