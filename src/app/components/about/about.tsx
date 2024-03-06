@@ -18,26 +18,57 @@ import { SiFirebase } from "react-icons/si";
 import { FaFileDownload } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useLayoutEffect } from 'react';
 
 function About(){
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
+
+    let mm = gsap.matchMedia(), breakPoint = 800;
+
+    mm.add(
+      {
+        isDesktop: `(min-width: ${breakPoint}px)`,
+        isMobile: `(max-width: ${breakPoint - 1}px)`
+      },
+      (context) => {
+        let { isDesktop, isMobile } = context.conditions;
+      
     gsap.to(".about-info-container", {
       x: 0,
       opacity: 1,
       rotate: "0deg",
       scrollTrigger:{
         trigger: ".about-section",
-        markers: true,
+        start: "top 600px", end: "bottom 800px",
+        scrub: true,
+      }
+    })
+  }
+  )
+    gsap.to(".texts-about-center", {
+      x: 0,
+      opacity: 1,
+      rotate: "0deg",
+      scrollTrigger:{
+        trigger: ".about-section",
+        start: "top 500px", end: "bottom 650px",
+        scrub: true,
+      }
+    })
+    gsap.to(".skills-container", {
+      x: 0,
+      opacity: 1,
+      rotate: "0deg",
+      scrollTrigger:{
+        trigger: ".about-section",
         start: "top 600px", end: "bottom 800px",
         scrub: true,
       }
     })
     return () => {
-      gsap.killTweensOf(".about-info-container")
+      gsap.killTweensOf(".about-info-container", ".texts-about-center")
     }
   }, [])
 
@@ -67,14 +98,15 @@ function About(){
                items-center justify-center rounded-xl">CVV <FaFileDownload/></button>
               </div>
              </div>
-             <div className="flex flex-col gap-6 w-[570px] majortwo1:w-[530px] midtw:gap-2"><h1 className="font-bold text-[48px] majortwo:text-[40px] majortwo4:text-[32px] midtw:text-[26px] low:text-[23px]
+             <div className="texts-about-center opacity-0 flex flex-col gap-6 w-[570px] majortwo1:w-[530px] midtw:gap-2"><h1 className="font-bold text-[48px] majortwo:text-[40px] majortwo4:text-[32px] midtw:text-[26px] low:text-[23px]
               lowone:text-[19px]">Quem <br /> É <span className="text-blue-400">Caique</span>, <br /> Como Desenvolvedor?</h1>
              <p className='midtwo:text-[15px] midtwo4:text-[12px]'>Tenho 19 anos e sou desenvolvedor web. Soube mais da programação durante o curso técnico, decidindo aprofundar-me nesse universo. Meu objetivo é construir o que imagino,
                explorando todo o potencial da tecnologia. Gosto da mistura de criatividade e solução de problemas que abrangem a área. Estou em constante busca por aprendizado e inovação
                 para transformar ideias em realidade.</p>
                <p className="text-blue-400 font-extrabold text-[54px] majortwo:text-[46px] majortwo4:text-[37px] majorthree1:hidden">Bora <br /> negociar?</p>
     </div>
-    <div className='flex flex-col items-center justify-center w-[300px] bg-black bg-opacity-35 rounded-xl border-solid border-white
+    <div className='skills-container translate-x-[400px] rotate-[180deg] flex flex-col items-center justify-center w-[300px] bg-black
+      opacity-0 bg-opacity-35 rounded-xl border-solid border-white
      border-2 pb-2 majorthree1:hidden'>
       <Image src={CardsGame} alt='cards gif'/>
       <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>

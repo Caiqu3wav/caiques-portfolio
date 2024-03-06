@@ -4,16 +4,32 @@ import Link from "next/link";
 import { projects } from "../../data/projects/index";
 import "./projectsComp.css";
 import "./texts.css";
+import { useLayoutEffect } from "react";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Projects() {
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.to(".projects-intros", {
+          y: 0,
+          opacity: 1,
+          rotate: "0deg",
+          scrollTrigger:{
+            trigger: ".projects-container",
+            start: "top 800px", end: "bottom 1000px",
+            scrub: true,
+          }
+        })
+      }, [])
 
     return(
-        <div id="projects" className="projects-container flex flex-col items-center justify-center">
-            <h1 className="micro-5-regular text-blue-400">Projetos</h1>
-            <h2 className="border-solid border-b-4 border-blue-400 rounded-lg
+        <div id="projects" className="projects-container flex flex-col items-center justify-center overflow-y-hidden">
+            <h1 className="micro-5-regular projects-intros translate-y-[400px] opacity-0 text-blue-400">Projetos</h1>
+            <h2 className="projects-intros translate-y-[400px] opacity-0 border-solid border-b-4 border-blue-400 rounded-lg
              text-black font-bold text-xl text-center">Apenas alguns dos meus projetos pessoais ou freelances que trabalhei ou venho trabalhando</h2>
-        <div className="hero-container self-center w-[89%] h-fit lowtwo3:w-[80%] midtwo2:w-[90%] lowtwo:ml-2 flex flex-col pl-3 pr-3 rounded-3xl pb-6 items-center
-        justify-center mt-2">
+        <div className="hero-container projects-intros self-center w-[89%] h-fit lowtwo3:w-[80%] midtwo2:w-[90%] lowtwo:ml-2 flex flex-col pl-3 pr-3 rounded-3xl pb-6 items-center
+        justify-center mt-2 translate-y-[400px] opacity-0">
         <div className='grid grid-cols-3 midthree:grid-cols-2 low:grid-cols-1 justify-between gap-6 pb-4 pl-2 pr-2 bg-slate-400 rounded-lg bg-opacity-75'>
         {projects.map((project) => (
     <div key={project.id} className="flex flex-col items-center justify-center gap-2">

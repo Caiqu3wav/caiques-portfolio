@@ -29,4 +29,11 @@ export const projects = [
         img: '/assets/projectsimg/cubapersonal.png',
         link: 'https://cuba-personal.vercel.app'
     },
+    {
+        id: 5,
+        name: 'Art & Reforma',
+        descr: 'Site para uma empresa de reformas',
+        img: '/assets/projectsimg/artreforma.png',
+        link: 'https://artreforma.vercel.app'
+    },
 ]

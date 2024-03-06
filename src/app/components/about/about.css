@@ -22,6 +22,6 @@
 }
 
 .about-info-container{
-    transform: translateX(-300px) rotate(-180deg);
+    transform: translateX(-300px);
     opacity: 0;
 }
