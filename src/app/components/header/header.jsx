@@ -1,7 +1,7 @@
 'use client';
 import './header.css';
 import { useState, useEffect, SetStateAction } from 'react';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
 import Image from 'next/image';
 import Caique_wav_logo from "../../../../public/assets/images/caique_wav_logo.png";
 import { GiHamburgerMenu } from 'react-icons/gi';
