@@ -20,7 +20,7 @@ export const projects = [
         name: 'Discover Personality',
         descr: 'Site sobre personalidades MBTI e teste de personalidade',
         img: '/assets/projectsimg/discoverypersonality.png',
-        link: 'https://discoverpersonality.vercel.app'
+        link: 'https://discover-personality.vercel.app'
     },
     {
         id: 4,
