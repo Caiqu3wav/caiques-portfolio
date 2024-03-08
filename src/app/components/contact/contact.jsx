@@ -17,7 +17,7 @@ export default function Contact() {
         paused={false}
         style={{ display: 'flex' }}
         options={{
-          height: 2,
+          height: 25,
           amplitude: 25,
           speed: 0.25,
           points: 3

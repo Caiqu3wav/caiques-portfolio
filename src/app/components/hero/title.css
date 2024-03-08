@@ -32,6 +32,13 @@
   letter-spacing: 0.4rem;
 }
 
+@media screen and (max-width: 436px) {
+  .text-shadows{
+    text-shadow: 1px 1px 0 var(--color-secondary), 4px 4px 0 var(--color-tertiary),
+    7px 7px var(--color-quaternary), 10px 10px 0 var(--color-quinary);
+  }
+}
+
 @keyframes shadows {
   0% {
     text-shadow: none;

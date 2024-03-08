@@ -5,3 +5,8 @@
   font-weight: 400;
   font-style: normal;
 }
+
+svg{
+  border-top-width: 2px;
+  border-top-color: #251c4c;
+}
