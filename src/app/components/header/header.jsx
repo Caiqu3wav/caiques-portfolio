@@ -55,13 +55,13 @@ function Header(){
     return (
         <div>
             <header className='flex justify-between'>
-              <Link className='h-full w-fit' href="/"><Image src={Caique_wav_logo} className='w-[100px]' alt='caique_wav logo'/></Link>
+              <Link className='h-[90px] w-[100px]' href="/"><Image src={Caique_wav_logo} className='w-[100px] h-[90px]' alt='caique_wav logo'/></Link>
                 <nav className='mr-[24%] majortwo1:mr-[18%] majortwo3:mr-[14%] majorthree2:mr-[8%]'>
                     <ul className='midtw:hidden'>
 <Link href='/'><li>Home</li></Link>
 <Link href='#about'><li>Sobre</li></Link>
 <Link href='#projects'><li>Projetos</li></Link>
-<Link href='#contact'><li>Contato</li></Link>
+<Link href='#contact'><li>Links</li></Link>
                     </ul>
                     <button aria-label="Open Menu" onClick={toggleMenu} className="btn-hamburguer hidden ml-[70%] midtw:flex">
                 <GiHamburgerMenu size={60} className="text-blue-400" />

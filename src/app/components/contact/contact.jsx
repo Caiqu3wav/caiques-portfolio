@@ -52,7 +52,9 @@ export default function Contact() {
                 </div>
                 <div className="flex mt-4">
                     <MdAttachEmail size={25}/>:
+                    <Link href="mailto:asapcaique@gmail.com">
                         <p className="links-inform ml-2 text-blue-900 midtwo:text-[13px] midfour:text-[11px] midfour:font-bold">@asapcaique7@gmail.com</p>
+                        </Link>
                 </div>
                 <div className="flex mt-4">
                 <PiWhatsappLogoDuotone size={25} color="black" />:<a className="text-blue-900 ml-2 underline underline-offset-4 
