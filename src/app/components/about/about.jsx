@@ -83,7 +83,22 @@ function About(){
     return () => {
       gsap.killTweensOf(".about-info-container", ".texts-about-center")
     }
-  }, [])
+  }, []);
+
+  const handleDownloadClick = () => {
+    const downloadLink = document.createElement('a');
+    
+    downloadLink.href = '/assets/caique-curriculo-10032024.pdf';
+
+    downloadLink.download = 'caique-curriculo-10032024.pdf';
+
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
+
+    document.body.removeChild(downloadLink);
+  };
+
 
     return(
       <section id="about" className="about-section">
@@ -108,7 +123,7 @@ function About(){
               <PiWhatsappLogoDuotone color="rgba(39, 245, 238, 0.8)" className="mt-2" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/12997364432">(12) 997364432</a>
               </div>
               <button className="text-black flex w-[70%] py-2 bg-slate-100 gap-3
-               items-center justify-center rounded-xl">CVV <FaFileDownload/></button>
+               items-center justify-center rounded-xl" onClick={handleDownloadClick}>CVV <FaFileDownload/></button>
               </div>
              </div>
              <div className="texts-about-center opacity-0 flex flex-col gap-6 w-[570px] majortwo1:w-[530px] midtw:gap-2"><h1 className="font-bold text-[48px] majortwo:text-[40px] majortwo4:text-[32px] midtw:text-[26px] low:text-[23px]
