@@ -14,7 +14,7 @@ import { FaNode } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
-import { SiFirebase } from "react-icons/si";
+import { SiNestjs } from "react-icons/si";
 import { FaFileDownload } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -146,7 +146,7 @@ function About(){
         <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
         <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
-        <div className='flex flex-col items-center text-center'><SiFirebase  className='text-[50px] text-red-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Firebase</p></div>
+        <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
         </div>
     </div>
@@ -163,7 +163,7 @@ function About(){
         <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px]'>Node.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px]'>MongoDB</p></div>
         <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p className='midfour:text-[13px]'>Java</p></div>
-        <div className='flex flex-col items-center text-center'><SiFirebase  className='text-[50px] text-red-500'/> <p className='midfour:text-[13px]'>Firebase</p></div>
+        <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='midfour:text-[13px]'>Nest.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px]'>TypeScript</p></div>
         </div>
     </div>
