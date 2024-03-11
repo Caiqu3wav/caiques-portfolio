@@ -15,6 +15,8 @@ import { SiMongodb } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { FaFileDownload } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -135,20 +137,22 @@ function About(){
     </div>
     <div className='skills-container translate-x-[400px] rotate-[180deg] flex flex-col items-center justify-center w-[300px] bg-black
       opacity-0 bg-opacity-35 rounded-xl border-solid border-white
-     border-2 pb-2 majorthree1:hidden'>
-      <Image src={CardsGame} alt='cards gif'/>
+     border-2 pb-2 h-[570px] majorthree1:hidden'>
+      <Image src={CardsGame} className='w-[130px]' alt='cards gif'/>
       <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='stacks-container grid grid-cols-2 gap-4'>
-      <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='text-[50px]'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandJavascript  className='text-[50px] text-yellow-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>JavaScript</p></div>
-        <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
-        <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
-        <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
-        <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
-        <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
-        </div>
+      <div className='flex flex-col items-center text-center'><FaReact className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='skills-logo'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandJavascript  className='skills-logo text-yellow-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>JavaScript</p></div>
+        <div className='flex flex-col items-center text-center'><FaNode  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
+        <div className='flex flex-col items-center text-center'><SiMongodb  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
+        <div className='flex flex-col items-center text-center'><FaJava  className='skills-logo text-red-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
+        <div className='flex flex-col items-center text-center'><SiNestjs  className='skills-logo text-red-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
+        <div className='flex flex-col items-center text-center'><SiTypescript  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
+        <div className='flex flex-col items-center text-center'><SiPrisma  className='skills-logo text-green-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Prisma</p></div>
+        <div className='flex flex-col items-center text-center'><BiLogoPostgresql  className='skills-logo text-blue-700'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>PostgreSql</p></div>
+        </div> 
     </div>
     </div> 
     <div className='below-skills opacity-0 flex-col hidden items-center justify-center bg-black bg-opacity-35 rounded-xl border-solid border-white
@@ -157,14 +161,16 @@ function About(){
       <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='grid grid-cols-4 gap-4'>
-      <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px]'>React.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='text-[50px]'/> <p className='midfour:text-[13px]'>Next.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandJavascript  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px]'>JavaScript</p></div>
-        <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px]'>Node.JS</p></div>
-        <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px]'>MongoDB</p></div>
-        <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p className='midfour:text-[13px]'>Java</p></div>
-        <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='midfour:text-[13px]'>Nest.JS</p></div>
-        <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px]'>TypeScript</p></div>
+      <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='text-[50px]'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandJavascript  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>JavaScript</p></div>
+        <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
+        <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
+        <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
+        <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
+        <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
+        <div className='flex flex-col items-center text-center'><SiPrisma  className='text-[50px] text-green-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Prisma</p></div>
+        <div className='flex flex-col items-center text-center lowtwo:ml-10'><BiLogoPostgresql  className='text-[50px] text-blue-700'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>PostgreSql</p></div>
         </div>
     </div>
       </section>
