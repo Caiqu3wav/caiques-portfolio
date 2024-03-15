@@ -16,7 +16,7 @@ import { FaJava } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
 import { FaFileDownload } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -130,7 +130,7 @@ function About(){
              </div>
              <div className="texts-about-center opacity-0 flex flex-col gap-6 w-[570px] majortwo1:w-[530px] midtw:gap-2"><h1 className="font-bold text-[48px] majortwo:text-[40px] majortwo4:text-[32px] midtw:text-[26px] low:text-[23px]
               lowone:text-[19px]">Quem <br /> É <span className="text-blue-400">Caique</span>, <br /> Como Desenvolvedor?</h1>
-             <p className='midtwo:text-[15px] midtwo4:text-[12px]'>Tenho 19 anos e sou desenvolvedor web. Soube mais da programação durante o curso técnico, decidindo aprofundar-me nesse universo. Meu objetivo é construir o que imagino,
+             <p className='midtwo:text-[15px] midtwo4:text-[12px]'>Tenho 19 anos e sou desenvolvedor web. Assim que eu soube como a programação funciona de verdade, decidi aprofundar-me nesse universo. Meu objetivo é construir o que imagino,
                explorando todo o potencial da tecnologia. Gosto da mistura de criatividade e solução de problemas que abrangem a área. Estou em constante busca por aprendizado e inovação
                 para transformar ideias em realidade.</p>
                <p className="text-blue-400 font-extrabold text-[54px] majortwo:text-[46px] majortwo4:text-[37px] majorthree1:hidden">Bora <br /> negociar?</p>
@@ -151,7 +151,7 @@ function About(){
         <div className='flex flex-col items-center text-center'><SiNestjs  className='skills-logo text-red-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiTypescript  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
         <div className='flex flex-col items-center text-center'><SiPrisma  className='skills-logo text-green-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Prisma</p></div>
-        <div className='flex flex-col items-center text-center'><BiLogoPostgresql  className='skills-logo text-blue-700'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>PostgreSql</p></div>
+        <div className='flex flex-col items-center text-center'><SiMysql  className='skills-logo bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>MySql</p></div>
         </div> 
     </div>
     </div> 
@@ -170,7 +170,7 @@ function About(){
         <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
         <div className='flex flex-col items-center text-center'><SiPrisma  className='text-[50px] text-green-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Prisma</p></div>
-        <div className='flex flex-col items-center text-center lowtwo:ml-10'><BiLogoPostgresql  className='text-[50px] text-blue-700'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>PostgreSql</p></div>
+        <div className='flex flex-col items-center text-center lowtwo:ml-10'><SiMysql className='text-[50px] bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MySql</p></div>
         </div>
     </div>
       </section>
