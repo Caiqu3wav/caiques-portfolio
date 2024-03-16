@@ -10,27 +10,34 @@ export const projects = [
     },
     {
         id: 2,
+        name: 'Do NOW',
+        descr: 'App gerenciador de tarefas dinâmico',
+        img: '/assets/projectsimg/donow.png',
+        link: 'https://donow-task-manager.vercel.app'
+    },
+    {
+        id: 3,
         name: 'Actual Coding',
         descr: 'Site de blogs com assuntos de programação',
         img: '/assets/projectsimg/actualcoding.png',
         link: 'https://actual-coding.vercel.app'
     },
     {
-        id: 3,
+        id: 4,
         name: 'Discover Personality',
         descr: 'Site sobre personalidades MBTI e teste de personalidade',
         img: '/assets/projectsimg/discoverypersonality.png',
         link: 'https://discover-personality.vercel.app'
     },
     {
-        id: 4,
+        id: 5,
         name: 'Cuba Personal',
         descr: 'Site freelance para um personal trainer',
         img: '/assets/projectsimg/cubapersonal.png',
         link: 'https://cuba-personal.vercel.app'
     },
     {
-        id: 5,
+        id: 6,
         name: 'Art & Reforma',
         descr: 'Site para uma empresa de reformas',
         img: '/assets/projectsimg/artreforma.png',
