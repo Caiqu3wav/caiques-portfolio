@@ -19,6 +19,7 @@ import { SiPrisma } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { FaFileDownload } from "react-icons/fa";
 import { gsap } from 'gsap';
+import { GrDocker } from "react-icons/gr";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from 'react';
 
@@ -137,7 +138,7 @@ function About(){
     </div>
     <div className='skills-container translate-x-[400px] rotate-[180deg] flex flex-col items-center justify-center w-[300px] bg-black
       opacity-0 bg-opacity-35 rounded-xl border-solid border-white
-     border-2 pb-2 h-[570px] majorthree1:hidden'>
+     border-2 pb-2 h-[620px] majorthree1:hidden'>
       <Image src={CardsGame} className='w-[130px]' alt='cards gif'/>
       <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
@@ -152,6 +153,7 @@ function About(){
         <div className='flex flex-col items-center text-center'><SiTypescript  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
         <div className='flex flex-col items-center text-center'><SiPrisma  className='skills-logo text-green-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Prisma</p></div>
         <div className='flex flex-col items-center text-center'><SiMysql  className='skills-logo bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>MySql</p></div>
+        <div className='flex flex-col items-center text-center'><GrDocker  className='skills-logo text-blue-500'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>Docker</p></div>
         </div> 
     </div>
     </div> 
@@ -171,6 +173,7 @@ function About(){
         <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
         <div className='flex flex-col items-center text-center'><SiPrisma  className='text-[50px] text-green-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Prisma</p></div>
         <div className='flex flex-col items-center text-center lowtwo:ml-10'><SiMysql className='text-[50px] bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MySql</p></div>
+        <div className='flex flex-col items-center text-center lowtwo:ml-10'><GrDocker className='text-[55px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Docker</p></div>
         </div>
     </div>
       </section>
