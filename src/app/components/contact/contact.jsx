@@ -36,7 +36,7 @@ export default function Contact() {
             <Image className="rounded-[30%] self-center w-[300px] midtw:w-[230px] midfour:w-[170px]" src={CaiqueAnimation} alt="Caique (the developer of this page) animate art image"/>
                 <h1 className="caique-name text-[45px] text-purple-700">Caique</h1>
                 <h1 className="text-xl text-black font-bold text-center">Programador FullStack</h1>
-                <h1 className="text-black font-semibold">Experiência: 8 meses</h1>
+                <h1 className="text-black font-semibold">Experiência: 2 Anos</h1>
                 <p className="text-black font-light">Enfim, espero estar fornecendo todas informações que precisava, estou em constantemente aprendizado
                 atravez de autodidatismo, cursos, pesquisas e principalmente na prática com meus projetos, o jeito que mais consigo aprender. <br />
                 estou aberto para trabalhar em projetos freelance ou principalmente recrutamento para equipes, minha maior missão agora é me conectar
