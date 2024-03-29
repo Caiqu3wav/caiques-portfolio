@@ -92,9 +92,9 @@ function About(){
   const handleDownloadClick = () => {
     const downloadLink = document.createElement('a');
     
-    downloadLink.href = '/assets/caique-curriculo-10032024.pdf';
+    downloadLink.href = '/assets/caique-curriculo-fullstack.pdf';
 
-    downloadLink.download = 'caique-curriculo-10032024.pdf';
+    downloadLink.download = 'caique-curriculo-fullstack.pdf';
 
     document.body.appendChild(downloadLink);
 
