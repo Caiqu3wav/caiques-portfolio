@@ -1,5 +1,3 @@
-
-
 export const projects = [
     {
         id: 1,
@@ -42,5 +40,12 @@ export const projects = [
         descr: 'Site para uma empresa de reformas',
         img: '/assets/projectsimg/artreforma.png',
         link: 'https://artreforma.vercel.app'
+    },
+    {
+        id: 7,
+        name: 'Bloodfield',
+        descr: 'Meu E-commerce fullstack de roupas',
+        img: '/assets/projectsimg/bloodfield.png',
+        link: 'https://bloodfield.vercel.app'
     },
 ]
