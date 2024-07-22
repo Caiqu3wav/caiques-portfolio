@@ -24,6 +24,7 @@ import { GrDocker } from "react-icons/gr";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from 'react';
 import { BiLogoGoLang } from "react-icons/bi";
+import { BiLogoCPlusPlus } from "react-icons/bi";
 
 function About(){
 
@@ -69,7 +70,7 @@ function About(){
       rotate: "0deg",
       scrollTrigger:{
         trigger: ".about-section",
-        start: "top 600px", end: "bottom 660px",
+        start: "top 660px", end: "bottom 680px",
         scrub: true,
       }
     })
@@ -125,7 +126,7 @@ function About(){
               <MdOutlineMoreTime color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>Full-time/Freelancer</p>
               </div>
               <div className="flex gap-3 midfour:gap-1">
-              <PiWhatsappLogoDuotone color="rgba(39, 245, 238, 0.8)" className="mt-2" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/12997364432">(12) 997364432</a>
+              <PiWhatsappLogoDuotone color="rgba(39, 245, 238, 0.8)" className="mt-2" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/12996246050">(12) 996246050</a>
               </div>
               <button className="text-black flex w-[70%] py-2 bg-slate-100 gap-3
                items-center justify-center rounded-xl" onClick={handleDownloadClick}>CVV <FaFileDownload/></button>
@@ -146,8 +147,8 @@ function About(){
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='stacks-container grid grid-cols-2 gap-4'>
       <div className='flex flex-col items-center text-center'><FaReact className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='skills-logo'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandJavascript  className='skills-logo text-yellow-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>JavaScript</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='skills-logo text-yellow-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
+        <div className='flex flex-col items-center text-center'><BiLogoCPlusPlus  className='skills-logo text-red-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>C++</p></div>
         <div className='flex flex-col items-center text-center'><FaNode  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiMongodb  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
         <div className='flex flex-col items-center text-center'><BiLogoGoLang  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Go</p></div>
@@ -167,8 +168,8 @@ function About(){
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='grid grid-cols-4 gap-4'>
       <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='text-[50px]'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandJavascript  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>JavaScript</p></div>
+        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='text-[50px] text-yellow-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
+        <div className='flex flex-col items-center text-center'><BiLogoCPlusPlus  className='text-[50px] text-red-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>C++</p></div>
         <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
         <div className='flex flex-col items-center text-center'><BiLogoGoLang  className='text-[50px] text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Go</p></div>
