@@ -1,10 +1,10 @@
 export const projects = [
     {
         id: 1,
-        name: 'FSH0',
+        name: 'DEICIDE',
         descr: 'Meu site de beats com player de música',
         img: '/assets/projectsimg/deicid3.png',
-        link: 'https://fsho.vercel.app'
+        link: 'https://deicide.vercel.app'
     },
     {
         id: 2,
