@@ -18,7 +18,7 @@ export default function Contact() {
   const endColor  = darkMode ? '#660000' : '#663100';
 
     return(
-      <div className="bg-[#131416] flex flex-col w-full h-fit">
+      <div className="bg-[#5F1100] dark:bg-[#131416] flex flex-col w-full h-fit">
         <Wave fill='url(#gradient)'
         paused={false}
         style={{ display: 'flex' }}

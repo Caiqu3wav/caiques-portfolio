@@ -25,6 +25,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from 'react';
 import { BiLogoGoLang } from "react-icons/bi";
 import { BiLogoCPlusPlus } from "react-icons/bi";
+import brLogo from '../../../../public/assets/images/brlogo.png'
+import euaLogo from '../../../../public/assets/images/eualogo.png'
 
 function About(){
 
@@ -105,12 +107,26 @@ function About(){
     document.body.removeChild(downloadLink);
   };
 
+  const handleDownloadClickEnglish = () => {
+    const downloadLink = document.createElement('a');
+    
+    downloadLink.href = '/assets/currcaiq-fullstack-og-eng.pdf';
+
+    downloadLink.download = 'currcaiq-fullstack-og-eng.pdf';
+
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
+
+    document.body.removeChild(downloadLink);
+  };
+
 
     return(
       <section id="about" className="about-section">
     <h1 className="text-3xl font-bold mb-2 midtwo2:mt-4 midtwo3:mt-7 low:mt-0 lowone:mt-11">Mais sobre mim</h1>
     <div className="flex w-full justify-around gap-3">
-      <div className="about-info-container flex flex-col items-center w-[300px] h-[400px] majorthree:h-[510px] majorthree:gap-5 bg-black bg-opacity-35 border-l-red-400
+      <div className="about-info-container flex flex-col items-center w-[300px] h-[450px] majorthree:h-[510px] majorthree:gap-5 bg-black bg-opacity-35 border-l-red-400
        border-t-red-400 border-solid border-2 rounded-tl-[100px] rounded-br-[100px] majorthree1:h-[400px] midfour:w-[250px] majorthree1:gap-1 midfour:h-[450px] midfour:ml-2">
             <Image className="rounded-xl w-[120px] mt-6 midfour:w-[100px]" src={CaiqueAnmPicAbout} alt="" />
             <h1 className="font-bold text-orange-600 dark:text-red-600  text-2xl border-b-2">Caique</h1>
@@ -128,8 +144,18 @@ function About(){
               <div className="flex gap-3 midfour:gap-1">
               <PiWhatsappLogoDuotone className="mt-2 dark:text-red-800 text-orange-700" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/12996246050">(12) 996246050</a>
               </div>
+              <div className='flex flex-col gap-2 majorthree1:flex-row midfour:flex-col'>
+              <div className='flex gap-3 items-center'>
               <button className="text-black flex w-[70%] py-2 bg-slate-100 gap-3
-               items-center justify-center rounded-xl" onClick={handleDownloadClick}>CVV <FaFileDownload/></button>
+               items-center justify-center rounded-xl midtw:py-1" onClick={handleDownloadClick}>CV <FaFileDownload/></button>
+               <Image src={brLogo} className='w-6 midtw:w-4' alt='brazil cv'/>
+               </div>
+               <div className='flex gap-3 items-center'>
+              <button className="text-black flex w-[70%] py-2 bg-slate-100 gap-3
+               items-center justify-center rounded-xl midtw:py-1" onClick={handleDownloadClickEnglish}>CV <FaFileDownload/></button>
+               <Image src={euaLogo} className='w-6 midtw:w-4' alt='eua cv'/>
+               </div>
+               </div>
               </div>
              </div>
              <div className="texts-about-center opacity-0 flex flex-col gap-6 w-[570px] majortwo1:w-[530px] midtw:gap-2"><h1 className="font-bold text-[48px] majortwo:text-[40px] majortwo4:text-[32px] midtw:text-[26px] low:text-[23px]
