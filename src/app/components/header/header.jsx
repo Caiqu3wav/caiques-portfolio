@@ -64,7 +64,7 @@ function Header(){
 <Link href='#contact'><li>Links</li></Link>
                     </ul>
                     <button aria-label="Open Menu" onClick={toggleMenu} className="btn-hamburguer hidden ml-[70%] midtw:flex">
-                <GiHamburgerMenu size={60} className="text-blue-400" />
+                <GiHamburgerMenu size={60} className="text-red-700" />
 </button>
 {isActive && (
         <div className="z-10 fixed inset-0 transition-opacity">
@@ -84,7 +84,7 @@ function Header(){
          
          {sideList.map(({ title, path }, index) => (
     <Link href={path} key={index}>
-        <span className="flex items-center p-4 hover:bg-blue-600 hover:text-black">
+        <span className="flex items-center p-4 hover:bg-red-600 hover:text-black">
           <span className="border-b-4">{title}</span>
         </span>
     </Link>

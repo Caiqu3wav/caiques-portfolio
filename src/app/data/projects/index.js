@@ -48,5 +48,12 @@ export const projects = [
         img: '/assets/projectsimg/bloodfield.png',
         link: 'https://bloodfield.vercel.app'
     },
+    {
+        id: 8,
+        name: 'Psychedelic JS',
+        descr: 'Site de obras, fractais e arts feitas com javascript',
+        img: '/assets/projectsimg/psychedelicjs.png',
+        link: 'https://psychedelicjs.vercel.app'
+    },
 ]
 

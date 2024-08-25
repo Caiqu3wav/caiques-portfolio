@@ -1,5 +1,5 @@
 header{
-    background-image: linear-gradient(rgb(52, 0, 87), rgb(26, 9, 29));
+    background-image: linear-gradient(rgb(87, 0, 0), rgb(26, 9, 29));
     position: fixed;
     z-index: 900;
     width: 100%;
@@ -38,5 +38,5 @@ ul li:hover{
 }
 
 aside{
-    background: linear-gradient(rgb(105, 1, 165), rgba(85, 28, 102, 0.438));
+    background: linear-gradient(rgb(165, 1, 1), rgba(102, 28, 28, 0.438));
 }

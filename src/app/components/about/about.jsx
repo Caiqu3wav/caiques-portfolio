@@ -110,40 +110,40 @@ function About(){
       <section id="about" className="about-section">
     <h1 className="text-3xl font-bold mb-2 midtwo2:mt-4 midtwo3:mt-7 low:mt-0 lowone:mt-11">Mais sobre mim</h1>
     <div className="flex w-full justify-around gap-3">
-      <div className="about-info-container flex flex-col items-center w-[300px] h-[400px] majorthree:h-[510px] majorthree:gap-5 bg-black bg-opacity-35 border-l-blue-400
-       border-t-blue-400 border-solid border-2 rounded-tl-[100px] rounded-br-[100px] majorthree1:h-[400px] midfour:w-[250px] majorthree1:gap-1 midfour:h-[450px] midfour:ml-2">
+      <div className="about-info-container flex flex-col items-center w-[300px] h-[400px] majorthree:h-[510px] majorthree:gap-5 bg-black bg-opacity-35 border-l-red-400
+       border-t-red-400 border-solid border-2 rounded-tl-[100px] rounded-br-[100px] majorthree1:h-[400px] midfour:w-[250px] majorthree1:gap-1 midfour:h-[450px] midfour:ml-2">
             <Image className="rounded-xl w-[120px] mt-6 midfour:w-[100px]" src={CaiqueAnmPicAbout} alt="" />
-            <h1 className="font-bold text-blue-400 text-2xl">Caique</h1>
+            <h1 className="font-bold text-red-600 text-2xl border-b-2">Caique</h1>
             <h2 className='font-semibold majortwo4:text-xs midfour:ml-1'>Desenvolvedor full-stack</h2>
             <div className="personal-card flex flex-col gap-3">
               <div className="flex gap-3 midfour:gap-1">
-              <MdAttachEmail color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>asapcaique@gmail.com</p>
+              <MdAttachEmail color="rgba(150, 38, 38, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>asapcaique@gmail.com</p>
               </div>
               <div className="flex gap-3 midfour:gap-1">
-              <MdLocalAirport color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>Brasil</p>
+              <MdLocalAirport color="rgba(150, 38, 38, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>Brasil</p>
               </div>
               <div className="flex gap-3 midfour:gap-1">
-              <MdOutlineMoreTime color="rgba(39, 245, 238, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>Full-time/Freelancer</p>
+              <MdOutlineMoreTime color="rgba(150, 38, 38, 0.8)" className="mt-2" /><p className='midfour:text-[12px]'>Full-time/Freelancer</p>
               </div>
               <div className="flex gap-3 midfour:gap-1">
-              <PiWhatsappLogoDuotone color="rgba(39, 245, 238, 0.8)" className="mt-2" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/12996246050">(12) 996246050</a>
+              <PiWhatsappLogoDuotone color="rgba(150, 38, 38, 0.8)" className="mt-2" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/12996246050">(12) 996246050</a>
               </div>
               <button className="text-black flex w-[70%] py-2 bg-slate-100 gap-3
                items-center justify-center rounded-xl" onClick={handleDownloadClick}>CVV <FaFileDownload/></button>
               </div>
              </div>
              <div className="texts-about-center opacity-0 flex flex-col gap-6 w-[570px] majortwo1:w-[530px] midtw:gap-2"><h1 className="font-bold text-[48px] majortwo:text-[40px] majortwo4:text-[32px] midtw:text-[26px] low:text-[23px]
-              lowone:text-[19px]">Quem <br /> É <span className="text-blue-400">Caique</span>, <br /> Como Desenvolvedor?</h1>
+              lowone:text-[19px]">Quem <br /> É <span className="text-red-600">Caique</span>, <br /> Como Desenvolvedor?</h1>
              <p className='midtwo:text-[15px] midtwo4:text-[12px]'>Tenho 19 anos e sou desenvolvedor web. Assim que eu soube como a programação funciona de verdade, decidi aprofundar-me nesse universo. Meu objetivo é construir o que imagino,
                explorando todo o potencial da tecnologia. Gosto da mistura de criatividade e solução de problemas que abrangem a área. Estou em constante busca por aprendizado e inovação
                 para transformar ideias em realidade.</p>
-               <p className="text-blue-400 font-extrabold text-[54px] majortwo:text-[46px] majortwo4:text-[37px] majorthree1:hidden">Bora <br /> negociar?</p>
+               <p className="text-red-600 font-extrabold text-[54px] majortwo:text-[46px] majortwo4:text-[37px] majorthree1:hidden">Bora <br /> negociar?</p>
     </div>
     <div className='skills-container translate-x-[400px] rotate-[180deg] flex flex-col items-center justify-center w-[300px] bg-black
       opacity-0 bg-opacity-35 rounded-xl border-solid border-white
      border-2 pb-2 h-[620px] majorthree1:hidden majorthree:h-[645px]'>
       <Image src={CardsGame} className='w-[130px]' alt='cards gif'/>
-      <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>
+      <h1 className='text-red-600 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='stacks-container grid grid-cols-2 gap-4'>
       <div className='flex flex-col items-center text-center'><FaReact className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
@@ -164,7 +164,7 @@ function About(){
     <div className='below-skills opacity-0 flex-col hidden items-center justify-center bg-black bg-opacity-35 rounded-xl border-solid border-white
      border-2 pb-2 w-[70%] mt-3 majorthree1:flex  midtwo:w-[95%]'>
       <Image src={CardsGame} className='w-[200px]' alt='cards gif'/>
-      <h1 className='text-blue-400 font-bold'>Cartas na manga</h1>
+      <h1 className='text-red-600 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='grid grid-cols-4 gap-4'>
       <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>

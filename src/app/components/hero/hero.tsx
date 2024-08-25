@@ -1,6 +1,6 @@
 'use client';
 import "./hero.css";
-import CaiqueAnmPic from "../../../../public/assets/caique_anime/Caique-character9(trapper).png";
+import CaiqueAnmPic from "../../../../public/assets/caique_anime/caique_anime-blackredbg.jpg";
 import Image from 'next/image';
 import { useAnimateKeyframes, AnimateKeyframes } from "react-simple-animate";
 import { GiAbstract066 } from "react-icons/gi";
@@ -25,7 +25,7 @@ function Hero(){
             <p className="gsapbk1">Sou um programador web que enxerga a técnologia como <br /> oportunidades intermináveis
               e uma ferramenta para transformar idéias em realidade.
             </p>
-            <GiAbstract066 className="rot text-[45px] self-center text-blue-300"/>
+            <GiAbstract066 className="rot text-[45px] self-center text-red-700"/>
 </div></div>
             </div>
         </section>
