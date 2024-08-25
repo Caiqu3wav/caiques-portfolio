@@ -1,13 +1,16 @@
 'use client';
 import './header.css';
-import { useState, useEffect, SetStateAction } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Caique_wav_logo from "../../../../public/assets/images/caique_wav_logo.png";
 import { GiHamburgerMenu } from 'react-icons/gi';
+import ToggleTheme from '../toggleTheme';
+import { useTheme } from '@/app/context/ThemeContext';
 
 function Header(){
   const [isActive, setIsActive] = useState(false);
+  const { darkMode } = useTheme();
 
   const sideList = [
       {
@@ -54,16 +57,16 @@ function Header(){
 
     return (
         <div>
-            <header className='flex justify-between'>
+            <header className='flex justify-between bg-orange-400 dark:bg-gradient-to-b from-red-700 to-black'>
              <Image src={Caique_wav_logo} className='w-[100px]' alt='caique_wav logo'/>
-                <nav className='mr-[24%] majortwo1:mr-[18%] majortwo3:mr-[14%] majorthree2:mr-[8%]'>
+                <nav className=''>
                     <ul className='midtw:hidden'>
 <Link href='/'><li>Home</li></Link>
 <Link href='#about'><li>Sobre</li></Link>
 <Link href='#projects'><li>Projetos</li></Link>
 <Link href='#contact'><li>Links</li></Link>
                     </ul>
-                    <button aria-label="Open Menu" onClick={toggleMenu} className="btn-hamburguer hidden ml-[70%] midtw:flex">
+                    <button aria-label="Open Menu" onClick={toggleMenu} className="btn-hamburguer hidden midtw:flex">
                 <GiHamburgerMenu size={60} className="text-red-700" />
 </button>
 {isActive && (
@@ -91,6 +94,7 @@ function Header(){
   ))}
       </aside>
                 </nav>
+                <ToggleTheme/>
             </header>
             <div className="above_hero"></div>
         </div>

@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    transition: background-color 1s, color 1s;
+  }  
+
 html {
     scroll-behavior: smooth;
   }

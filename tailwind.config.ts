@@ -24,6 +24,7 @@ const config: Config = {
       'majorthree': {'max': '890px'},
       'majorthree1': {'max': '800px'},
       'majorthree2': {'max': '772px'},
+      'bgMobileFix': {'max': '798px'},
       'majorfour': {'max': '761px'},
       'majorfour1': {'max': '700px'},
       'midtw': {'max': '648px'},
@@ -46,10 +47,13 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+          'HomeLight': "url('/assets/images/bghomefull-white.png')",
+          'HomeDark': "url('/assets/images/bghomefull-black.png')",
+          'MobileLight': "url('/assets/images/bghomefullmobile-white.png')",
+          'MobileDark': "url('/assets/images/bgmobilehome-black.png')",
+          'ProjectsBgLight': "url('/assets/images/bgprojectslight.jpg')",
+          'ProjectsBgDark': "url('/assets/images/bgprojectsDark.png')"
+              },
     },
   },
   plugins: [],

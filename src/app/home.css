@@ -1,5 +1,4 @@
 .bg-cont{
-    background: url(../../public/assets/images/bghomefull-black.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,7 +6,6 @@
 
 @media screen and (max-width: 798px) {
     .bg-cont{
-        background: url(../../public/assets/images/bgmobilehome-black.png);
         background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

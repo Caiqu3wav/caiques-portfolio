@@ -1,5 +1,4 @@
 header{
-    background-image: linear-gradient(rgb(87, 0, 0), rgb(26, 9, 29));
     position: fixed;
     z-index: 900;
     width: 100%;
@@ -34,7 +33,7 @@ ul li{
 ul li:hover{
     color: rgb(0, 0, 0);
     cursor: pointer;
-    background-color: rgb(0, 110, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 aside{
