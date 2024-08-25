@@ -51,7 +51,7 @@ const config: Config = {
           'HomeDark': "url('/assets/images/bghomefull-black.png')",
           'MobileLight': "url('/assets/images/bghomefullmobile-white.png')",
           'MobileDark': "url('/assets/images/bgmobilehome-black.png')",
-          'ProjectsBgLight': "url('/assets/images/bgprojectslight.jpg')",
+          'ProjectsBgLight': "url('/assets/images/bgprojectsLight.jpg')",
           'ProjectsBgDark': "url('/assets/images/bgprojectsDark.jpg')"
               },
     },
