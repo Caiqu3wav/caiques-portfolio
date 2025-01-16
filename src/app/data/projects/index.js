@@ -8,6 +8,13 @@ export const projects = [
     },
     {
         id: 2,
+        name: 'Cryptogen',
+        descr: 'Marketplace Web 3 de NFT',
+        img: '/assets/projectsimg/cryptogen.png',
+        link: 'https://cryptogen.vercel.app'
+    },
+    {
+        id: 2,
         name: 'Do NOW',
         descr: 'App gerenciador de tarefas dinâmico',
         img: '/assets/projectsimg/donow.png',

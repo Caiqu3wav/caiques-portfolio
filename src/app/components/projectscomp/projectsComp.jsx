@@ -8,6 +8,7 @@ import { useLayoutEffect } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useTheme } from "@/app/context/ThemeContext";
+import { RiInformationFill } from "react-icons/ri";
 
 export default function Projects() {
   const { darkMode } = useTheme();
@@ -51,11 +52,19 @@ export default function Projects() {
         <div className='grid grid-cols-3 midthree:grid-cols-2 low:grid-cols-1 justify-between gap-6 pb-4 pl-2 pr-2 bg-slate-700 rounded-lg bg-opacity-75'>
         {projects.slice(0, 7).map((project) => (
     <div key={project.id} className="flex flex-col items-center justify-center gap-2">
-      <Link href={project.link} target="_blank" className="flex flex-col items-center justify-center">
-        <img src={project.img} alt="blog image" className="blog-image mt-1 rounded-lg w-[90%]"/>
+      <button href={project.link} target="_blank" className="flex flex-col items-center justify-center">
+        <div className="relative">
+        <img src={project.img} alt="blog image" className="blog-image mt-1 rounded-lg w-[100%]"/>
+         <div className="absolute opacity-0 hover:opacity-100 transition-opacity duration-300 flex 
+         items-center justify-center flex-col top-0 left-0 w-full h-full bg-black bg-opacity-0 hover:bg-opacity-45 rounded-lg">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <RiInformationFill color='white' size={42} />
+            </div>
+         </div>
+        </div>
         <h1 className="dark:text-red-700 text-orange-600 text-xl midfour:text-[17px] font-bold text-center">{project.name}</h1>
         <p className="text-lg font-bold">{project.descr}</p>
-        </Link>
+        </button>
     </div>
 ))}
         </div> 
