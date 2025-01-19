@@ -1,16 +1,19 @@
 'use client';
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { projects } from "../../data/projects/index";
-import "./projectsComp.css";
-import "./texts.css";
-import { useLayoutEffect } from "react";
-import { gsap } from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useTheme } from "@/app/context/ThemeContext";
-import { RiInformationFill } from "react-icons/ri";
+import { useEffect, useState } from "react"
+import Link from "next/link"
+import { projects } from "../../data/projects/index"
+import "./projectsComp.css"
+import "./texts.css"
+import { useLayoutEffect } from "react"
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useTheme } from "@/app/context/ThemeContext"
+import { RiInformationFill } from "react-icons/ri"
+import ModalProject from '../ModalProject'
 
 export default function Projects() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const { darkMode } = useTheme();
 
     useLayoutEffect(() => {
@@ -40,7 +43,17 @@ export default function Projects() {
         })
       }
     )
-      }, [])
+      }, []);
+
+      const openModal = (project) => {
+        setSelectedProject(project);
+        setModalIsOpen(true);
+      };
+
+      const closeModal = () => {
+        setModalIsOpen(false);
+        setSelectedProject(null);
+      };
 
     return(
         <div id="projects" className={`projects-container ${darkMode ? 'bg-ProjectsBgDark' : 'bg-ProjectsBgLight'} flex flex-col items-center justify-center overflow-y-hidden`}>
@@ -52,7 +65,7 @@ export default function Projects() {
         <div className='grid grid-cols-3 midthree:grid-cols-2 low:grid-cols-1 justify-between gap-6 pb-4 pl-2 pr-2 bg-slate-700 rounded-lg bg-opacity-75'>
         {projects.slice(0, 7).map((project) => (
     <div key={project.id} className="flex flex-col items-center justify-center gap-2">
-      <button href={project.link} target="_blank" className="flex flex-col items-center justify-center">
+      <button onClick={() => openModal(project)} href={project.link} target="_blank" className="flex flex-col items-center justify-center">
         <div className="relative">
         <img src={project.img} alt="blog image" className="blog-image mt-1 rounded-lg w-[100%]"/>
          <div className="absolute opacity-0 hover:opacity-100 transition-opacity duration-300 flex 
@@ -70,6 +83,13 @@ export default function Projects() {
         </div> 
         <Link href="/projects" target="_blank"><button className="w-[140px] mt-6 bg-orange-500 dark:bg-red-500 text-white rounded-lg py-2">VER MAIS</button></Link>
         </div>
+        {modalIsOpen && (
+        <ModalProject
+          project={selectedProject}
+          onClose={closeModal}
+          isOpen={modalIsOpen}
+        />
+      )}
         </div>
     )
 }
