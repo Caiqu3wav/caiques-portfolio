@@ -36,7 +36,7 @@ export const projects = [
         description: "Actual Coding é uma plataforma de blogs dedicada a programadores e entusiastas de tecnologia. O site apresenta artigos sobre linguagens de programação, tendências do setor, tutoriais e dicas práticas. Um espaço para compartilhar conhecimento e engajar a comunidade dev.",
         img: '/assets/projectsimg/actualcoding.png',
         repo: "https://github.com/Caiqu3wav/Actual_Coding",
-        stacks: ["reactjs", "strapi"],
+        stacks: ["react", "strapi"],
         link: 'https://actual-coding.vercel.app'
     },
     {
