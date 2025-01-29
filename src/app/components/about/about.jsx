@@ -1,30 +1,20 @@
 'use client'
 import './about.css';
-import { MdAttachEmail } from "react-icons/md";
-import { MdLocalAirport } from "react-icons/md";
-import { MdOutlineMoreTime } from "react-icons/md";
+import { MdAttachEmail, MdLocalAirport, MdOutlineMoreTime } from "react-icons/md";
 import { PiWhatsappLogoDuotone } from "react-icons/pi";
 import CaiqueAnmPicAbout from "../../../../public/assets/caique_anime/Caique-character16(producing).png";
 import Image from 'next/image';
 import CardsGame from "../../../../public/assets/images/catasgif.gif";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaReact } from "react-icons/fa";
-import { TbBrandJavascript } from "react-icons/tb";
-import { FaNode } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { SiSpringboot } from "react-icons/si";
+import { FaNode, FaPython, FaFileDownload, FaReact } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { SiNestjs } from "react-icons/si";
+import { SiTypescript, SiNestjs, SiMongodb, SiMysql } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-import { FaFileDownload } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { GrDocker } from "react-icons/gr";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from 'react';
-import { BiLogoGoLang } from "react-icons/bi";
-import { BiLogoCPlusPlus } from "react-icons/bi";
+import { BiLogoCPlusPlus, BiLogoGoLang } from "react-icons/bi";
 import brLogo from '../../../../public/assets/images/brlogo.png'
 import euaLogo from '../../../../public/assets/images/eualogo.png'
 
@@ -178,8 +168,8 @@ function About(){
         <div className='flex flex-col items-center text-center'><FaNode  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiMongodb  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
         <div className='flex flex-col items-center text-center'><BiLogoGoLang  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Go</p></div>
+        <div className='flex flex-col items-center text-center'><FaPython  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
         <div className='flex flex-col items-center text-center'><FaJava  className='skills-logo text-red-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
-        <div className='flex flex-col items-center text-center'><SiSpringboot  className='text-[40px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Spring</p></div>
         <div className='flex flex-col items-center text-center'><SiNestjs  className='skills-logo text-red-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiTypescript  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
         <div className='flex flex-col items-center text-center'><SiMysql  className='skills-logo bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>MySql</p></div>
@@ -199,8 +189,8 @@ function About(){
         <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
         <div className='flex flex-col items-center text-center'><BiLogoGoLang  className='text-[50px] text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Go</p></div>
+        <div className='flex flex-col items-center text-center'><FaPython  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
         <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
-        <div className='flex flex-col items-center text-center'><SiSpringboot  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Spring</p></div>
         <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
         <div className='flex flex-col items-center text-center'><SiMysql className='text-[50px] bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MySql</p></div>
