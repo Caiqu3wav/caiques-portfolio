@@ -8,7 +8,7 @@ import CardsGame from "../../../../public/assets/images/catasgif.gif";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNode, FaPython, FaFileDownload, FaReact } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
-import { SiTypescript, SiNestjs, SiMongodb, SiMysql } from "react-icons/si";
+import { SiTypescript, SiNestjs, SiMongodb, SiPostgresql } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 import { gsap } from 'gsap';
 import { GrDocker } from "react-icons/gr";
@@ -168,11 +168,11 @@ function About(){
         <div className='flex flex-col items-center text-center'><FaNode  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiMongodb  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
         <div className='flex flex-col items-center text-center'><BiLogoGoLang  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Go</p></div>
-        <div className='flex flex-col items-center text-center'><FaPython  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
+        <div className='flex flex-col items-center text-center'><FaPython  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Python</p></div>
         <div className='flex flex-col items-center text-center'><FaJava  className='skills-logo text-red-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
         <div className='flex flex-col items-center text-center'><SiNestjs  className='skills-logo text-red-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiTypescript  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
-        <div className='flex flex-col items-center text-center'><SiMysql  className='skills-logo bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>MySql</p></div>
+        <div className='flex flex-col items-center text-center'><SiPostgresql  className='skills-logo bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>PostgreSql</p></div>
         <div className='flex flex-col items-center text-center'><GrDocker  className='skills-logo text-blue-500'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>Docker</p></div>
         </div> 
     </div>
@@ -189,11 +189,11 @@ function About(){
         <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
         <div className='flex flex-col items-center text-center'><BiLogoGoLang  className='text-[50px] text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Go</p></div>
-        <div className='flex flex-col items-center text-center'><FaPython  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
+        <div className='flex flex-col items-center text-center'><FaPython  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Python</p></div>
         <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
         <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
         <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
-        <div className='flex flex-col items-center text-center'><SiMysql className='text-[50px] bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MySql</p></div>
+        <div className='flex flex-col items-center text-center'><SiPostgresql className='text-[50px] bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>PostgreSql</p></div>
         <div className='flex flex-col items-center text-center'><GrDocker className='text-[55px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Docker</p></div>
         </div>
     </div>
