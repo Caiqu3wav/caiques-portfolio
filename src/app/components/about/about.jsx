@@ -72,7 +72,7 @@ function About(){
       rotate: "0deg",
       scrollTrigger:{
         trigger: ".about-section",
-        start: isPad ? "top 700px" : "top 400px", end: isPad ? "bottom 800px" : "bottom 600px",
+        start: isPad ? "top 700px" : "top 400px", end: isPad ? "bottom 800px" : "bottom 500px",
         scrub: true,
       }
     })
@@ -137,12 +137,12 @@ function About(){
               <div className='flex flex-col gap-2 majorthree1:flex-row midfour:flex-col'>
               <div className='flex gap-3 items-center'>
               <button className="text-black flex w-[70%] py-2 bg-slate-100 gap-3
-               items-center justify-center rounded-xl midtw:py-1" onClick={handleDownloadClick}>CV <FaFileDownload/></button>
+               items-center justify-center rounded-xl midtw:py-1" onClick={handleDownloadClick}>CVC <FaFileDownload/></button>
                <Image src={brLogo} className='w-6 midtw:w-4' alt='brazil cv'/>
                </div>
                <div className='flex gap-3 items-center'>
               <button className="text-black flex w-[70%] py-2 bg-slate-100 gap-3
-               items-center justify-center rounded-xl midtw:py-1" onClick={handleDownloadClickEnglish}>CV <FaFileDownload/></button>
+               items-center justify-center rounded-xl midtw:py-1" onClick={handleDownloadClickEnglish}>CVC <FaFileDownload/></button>
                <Image src={euaLogo} className='w-6 midtw:w-4' alt='eua cv'/>
                </div>
                </div>
@@ -155,9 +155,9 @@ function About(){
                 para transformar ideias em realidade.</p>
                <p className="text-orange-600 dark:text-red-600 font-extrabold text-[54px] majortwo:text-[46px] majortwo4:text-[37px] majorthree1:hidden">Bora <br /> negociar?</p>
     </div>
-    <div className='skills-container translate-x-[400px] rotate-[180deg] flex flex-col items-center justify-center w-[300px] bg-black
+    <div className='skills-container h-fit translate-x-[400px] rotate-[180deg] flex flex-col items-center justify-center w-[300px] bg-black
       opacity-0 bg-opacity-35 rounded-xl border-solid border-white
-     border-2 pb-2 h-[620px] majorthree1:hidden majorthree:h-[645px]'>
+     border-2 pb-2  majorthree1:hidden'>
       <Image src={CardsGame} className='w-[130px]' alt='cards gif'/>
       <h1 className='text-orange-600 dark:text-red-600 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
