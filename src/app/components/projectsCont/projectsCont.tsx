@@ -24,7 +24,7 @@ export default function ProjectsCont({ bgImg }: projectsContProps) {
             {projects.map((project) => (
               <div key={project.id} className="flex flex-col items-center justify-center gap-2">
                 <Link href={project.link} target="_blank" className="flex flex-col items-center justify-center">
-                  <img src={project.img} alt="blog image" className="blog-image mt-1 rounded-lg w-[90%]" />
+                  <img src={project.img} alt="project image" className="blog-image mt-1 rounded-lg w-[90%]" />
                   <h1 className="text-orange-400 dark:text-red-500 text-xl midfour:text-[17px] font-bold text-center border-b-2 border-white
                    dark:border-black">{project.name}</h1>
                   <p className="text-lg font-bold text-center">{project.descr}</p>

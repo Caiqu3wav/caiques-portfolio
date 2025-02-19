@@ -42,7 +42,7 @@ export default function Contact() {
             <Image className="rounded-[30%] self-center w-[300px] midtw:w-[230px] midfour:w-[170px]" src={CaiqueAnimation} alt="Caique (the developer of this page) animate art image"/>
                 <h1 className="caique-name text-[45px] text-orange-600 dark:text-red-700">Caique</h1>
                 <h1 className="text-xl text-black font-bold text-center">Programador FullStack</h1>
-                <h1 className="text-black font-semibold">Experiência: 3 Anos</h1>
+                <h1 className="text-black font-semibold">Experiência: 2 Anos</h1>
                 <p className="text-black font-light">Enfim, espero estar fornecendo todas informações que precisava, estou em constantemente aprendizado
                 atravez de autodidatismo, cursos, pesquisas e principalmente na prática com meus projetos, o jeito que mais consigo aprender. <br />
                 estou aberto para trabalhar em projetos freelance ou principalmente recrutamento para equipes, minha maior missão agora é me conectar
@@ -51,15 +51,15 @@ export default function Contact() {
                 <FaArrowAltCircleDown size={40} className="bounce2 mt-4"/>
                 <div className="flex mt-4">
                     <FaLinkedin size={25}/>: <Link href="https://www.linkedin.com/in/caique-dos-santos-a69425246/" target="_blank">
-                        <p className="links-inform ml-2 text-orange-700 dark:text-red-900 midtwo:text-[13px] midfour:text-[11px] midfour:font-bold lowone:text-[9px]">https://www.linkedin.com/in/caique-dos-santos-a69425246/</p></Link>
+                        <p className="links-inform ml-2 text-orange-700 hover:underline dark:text-red-900 midtwo:text-[13px] midfour:text-[11px] midfour:font-bold lowone:text-[9px]">https://www.linkedin.com/in/caique-dos-santos-a69425246/</p></Link>
                 </div><div className="flex mt-4">
                     <FaGithub size={25}/>: <Link href="https://github.com/Caiqu3wav" target="_blank">
-                        <p className="links-inform ml-2 text-orange-700 dark:text-red-900 midtwo:text-[13px] midfour:text-[11px] midfour:font-bold">https://github.com/Caiqu3wav</p></Link>
+                        <p className="links-inform ml-2 text-orange-700 hover:underline dark:text-red-900 midtwo:text-[13px] midfour:text-[11px] midfour:font-bold">https://github.com/Caiqu3wav</p></Link>
                 </div>
                 <div className="flex mt-4">
                     <MdAttachEmail size={25}/>:
                     <Link href="mailto:asapcaique@gmail.com">
-                        <p className="links-inform ml-2 text-orange-700 dark:text-red-900 midtwo:text-[13px] midfour:text-[11px] midfour:font-bold">@asapcaique7@gmail.com</p>
+                        <p className="links-inform ml-2 text-orange-700 hover:underline dark:text-red-900 midtwo:text-[13px] midfour:text-[11px] midfour:font-bold">@asapcaique7@gmail.com</p>
                         </Link>
                 </div>
                 <div className="flex mt-4">

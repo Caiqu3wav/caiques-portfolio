@@ -67,7 +67,7 @@ export default function Projects() {
     <div key={project.id} className="flex flex-col items-center justify-center gap-2">
       <button onClick={() => openModal(project)} href={project.link} target="_blank" className="flex flex-col items-center justify-center">
         <div className="relative">
-        <img src={project.img} alt="blog image" className="blog-image mt-1 rounded-lg w-[100%]"/>
+        <img src={project.img} alt="blog image" className="blog-image mt-1 rounded-lg w-[340px] h-[180px]"/>
          <div className="absolute opacity-0 hover:opacity-100 transition-opacity duration-300 flex 
          items-center justify-center flex-col top-0 left-0 w-full h-full bg-black bg-opacity-0 hover:bg-opacity-45 rounded-lg">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">

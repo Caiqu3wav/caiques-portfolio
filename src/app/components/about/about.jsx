@@ -150,8 +150,8 @@ function About(){
              </div>
              <div className="texts-about-center opacity-0 flex flex-col gap-6 w-[570px] majortwo1:w-[530px] midtw:gap-2"><h1 className="font-bold text-[48px] majortwo:text-[40px] majortwo4:text-[32px] midtw:text-[26px] low:text-[23px]
               lowone:text-[19px]">Quem <br /> É <span className="text-orange-600 dark:text-red-600">Caique</span>, <br /> Como Desenvolvedor?</h1>
-             <p className='midtwo:text-[15px] midtwo4:text-[12px]'>Tenho 20 anos e sou desenvolvedor web. Assim que eu soube como a programação funciona de verdade, decidi aprofundar-me nesse universo. Meu objetivo é construir o que imagino,
-               explorando todo o potencial da tecnologia. Gosto da mistura de criatividade e solução de problemas que abrangem a área. Estou em constante busca por aprendizado e inovação
+             <p className='midtwo:text-[14px] midtwo4:text-[11px]'>Tenho 20 anos e sou desenvolvedor web. Assim que eu soube como a programação funciona de verdade, decidi aprofundar-me nesse universo. Meu objetivo é construir o que 
+              imagino, sem deixar de lado a performance e a segurança. Estou sempre explorando todo o potencial da tecnologia. Gosto da mistura de criatividade e solução de problemas que abrangem a área. Estou em constante busca por aprendizado e inovação
                 para transformar ideias em realidade.</p>
                <p className="text-orange-600 dark:text-red-600 font-extrabold text-[54px] majortwo:text-[46px] majortwo4:text-[37px] majorthree1:hidden">Bora <br /> negociar?</p>
     </div>
