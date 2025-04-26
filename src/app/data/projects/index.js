@@ -7,7 +7,7 @@ export const projects = [
         img: '/assets/projectsimg/deicid3.png',
         repo: "https://github.com/Caiqu3wav/deicid3",
         stacks: ["nextjs", "typescript", "zustand", "stripe", "tailwind"],
-        link: 'https://deicide.vercel.app'
+        link: 'https://deicid3.vercel.app'
     },
     {
         id: 2,
