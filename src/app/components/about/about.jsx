@@ -208,7 +208,6 @@ function About(){
       <h1 className='text-orange-600 dark:text-red-600 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='grid grid-cols-4 gap-4'>
-      <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
         {skills.map(skill => (
           <div className='flex flex-col items-center text-center'>
             {skill.icon}
