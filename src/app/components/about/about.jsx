@@ -17,8 +17,10 @@ import { useLayoutEffect } from 'react';
 import { BiLogoCPlusPlus, BiLogoGoLang } from "react-icons/bi";
 import brLogo from '../../../../public/assets/images/brlogo.png'
 import euaLogo from '../../../../public/assets/images/eualogo.png'
+import { useTheme } from "@/app/context/ThemeContext";
 
 function About(){
+  const { darkMode } = useTheme();
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
@@ -111,7 +113,36 @@ function About(){
     document.body.removeChild(downloadLink);
   };
 
+  const skills = [
+    { icon: <FaReact className="skills-logo text-blue-500" />, label: 'React.JS' },
+    { icon: <TbBrandNextjs className="skills-logo text-yellow-500" />, label: 'Next.JS' },
+    { icon: <BiLogoCPlusPlus className="skills-logo text-red-600" />, label: 'C++' },
+    { icon: <FaNode className="skills-logo text-green-600" />, label: 'Node.JS' },
+    { icon: <SiMongodb className="skills-logo text-green-600" />, label: 'MongoDB' },
+    { icon: <BiLogoGoLang className="skills-logo text-blue-500" />, label: 'Go' },
+    { icon: <FaPython className="text-[50px] text-yellow-400" />, label: 'Python' },
+    { icon: <FaJava className="skills-logo text-red-600" />, label: 'Java' },
+    { icon: <SiNestjs className="skills-logo text-red-500" />, label: 'Nest.JS' },
+    { icon: <SiTypescript className="skills-logo text-blue-500" />, label: 'TypeScript' },
+    { icon: <SiPostgresql className="skills-logo bg-blue-600 rounded-full px-1 text-orange-400" />, label: 'PostgreSql' },
+    { icon: <GrDocker className="skills-logo text-blue-500" />, label: 'Docker' },
+  ];
 
+  const skillsHorizontal = [
+    { icon: <FaReact className="text-[50px] text-blue-500" />, label: 'React.JS' },
+    { icon: <TbBrandNextjs className="text-[50px] text-yellow-500" />, label: 'Next.JS' },
+    { icon: <BiLogoCPlusPlus className="text-[50px] text-red-600" />, label: 'C++' },
+    { icon: <FaNode className="text-[50px] text-green-600" />, label: 'Node.JS' },
+    { icon: <SiMongodb className="text-[50px] text-green-600" />, label: 'MongoDB' },
+    { icon: <BiLogoGoLang className="text-[50px] text-blue-500" />, label: 'Go' },
+    { icon: <FaPython className="text-[50px] text-yellow-400" />, label: 'Python' },
+    { icon: <FaJava className="text-[50px] text-red-600" />, label: 'Java' },
+    { icon: <SiNestjs className="text-[50px] text-red-500" />, label: 'Nest.JS' },
+    { icon: <SiTypescript className="text-[50px] text-blue-500" />, label: 'TypeScript' },
+    { icon: <SiPostgresql className="text-[50px] bg-blue-600 rounded-full px-1 text-orange-400" />, label: 'PostgreSql' },
+    { icon: <GrDocker className="text-[50px] text-blue-500" />, label: 'Docker' },
+  ];
+  
     return(
       <section id="about" className="about-section">
     <h1 className="text-3xl font-bold mb-2 midtwo2:mt-4 midtwo3:mt-7 low:mt-0 lowone:mt-11">Mais sobre mim</h1>
@@ -162,18 +193,12 @@ function About(){
       <h1 className='text-orange-600 dark:text-red-600 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='stacks-container grid grid-cols-2 gap-4'>
-      <div className='flex flex-col items-center text-center'><FaReact className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='skills-logo text-yellow-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
-        <div className='flex flex-col items-center text-center'><BiLogoCPlusPlus  className='skills-logo text-red-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>C++</p></div>
-        <div className='flex flex-col items-center text-center'><FaNode  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
-        <div className='flex flex-col items-center text-center'><SiMongodb  className='skills-logo text-green-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
-        <div className='flex flex-col items-center text-center'><BiLogoGoLang  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Go</p></div>
-        <div className='flex flex-col items-center text-center'><FaPython  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Python</p></div>
-        <div className='flex flex-col items-center text-center'><FaJava  className='skills-logo text-red-600'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
-        <div className='flex flex-col items-center text-center'><SiNestjs  className='skills-logo text-red-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
-        <div className='flex flex-col items-center text-center'><SiTypescript  className='skills-logo text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
-        <div className='flex flex-col items-center text-center'><SiPostgresql  className='skills-logo bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>PostgreSql</p></div>
-        <div className='flex flex-col items-center text-center'><GrDocker  className='skills-logo text-blue-500'/> <p className='border-solid  border-b-2 border-purple-700 rounded-md'>Docker</p></div>
+      {skills.map((skill, index) => (
+        <div key={index} className="flex flex-col items-center text-center">
+          {skill.icon}
+          <p className={`border-solid border-b-2 ${darkMode ? 'border-red-700' : 'border-yellow-500'} rounded-md`}>{skill.label}</p>
+        </div>
+      ))}
         </div> 
     </div>
     </div> 
@@ -184,17 +209,12 @@ function About(){
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='grid grid-cols-4 gap-4'>
       <div className='flex flex-col items-center text-center'><FaReact className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>React.JS</p></div>
-        <div className='flex flex-col items-center text-center'><TbBrandNextjs className='text-[50px] text-yellow-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Next.JS</p></div>
-        <div className='flex flex-col items-center text-center'><BiLogoCPlusPlus  className='text-[50px] text-red-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>C++</p></div>
-        <div className='flex flex-col items-center text-center'><FaNode  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Node.JS</p></div>
-        <div className='flex flex-col items-center text-center'><SiMongodb  className='text-[50px] text-green-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>MongoDB</p></div>
-        <div className='flex flex-col items-center text-center'><BiLogoGoLang  className='text-[50px] text-blue-500'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>Go</p></div>
-        <div className='flex flex-col items-center text-center'><FaPython  className='text-[50px] text-yellow-400'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Python</p></div>
-        <div className='flex flex-col items-center text-center'><FaJava  className='text-[50px] text-red-600'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Java</p></div>
-        <div className='flex flex-col items-center text-center'><SiNestjs  className='text-[50px] text-red-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Nest.JS</p></div>
-        <div className='flex flex-col items-center text-center'><SiTypescript  className='text-[50px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>TypeScript</p></div>
-        <div className='flex flex-col items-center text-center'><SiPostgresql className='text-[50px] bg-blue-600 rounded-full px-1 text-orange-400'/> <p className='border-solid border-b-2 border-purple-700 rounded-md'>PostgreSql</p></div>
-        <div className='flex flex-col items-center text-center'><GrDocker className='text-[55px] text-blue-500'/> <p className='midfour:text-[13px] border-solid border-b-2 border-purple-700 rounded-md'>Docker</p></div>
+        {skills.map(skill => (
+          <div className='flex flex-col items-center text-center'>
+            {skill.icon}
+           <p className={`midfour:text-[13px] border-solid border-b-2 ${darkMode ? 'border-red-700' : 'border-yellow-500'} rounded-md`}>{skill.label}</p>
+          </div>
+        ))}
         </div>
     </div>
       </section>

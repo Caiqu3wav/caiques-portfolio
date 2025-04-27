@@ -1,6 +1,6 @@
 'use client';
 import "./hero.css";
-import CaiqueAnmPic from "../../../../public/assets/caique_anime/Caique-character9(trapper).png";
+import CaiqueAnmPic from "../../../../public/assets/caique_anime/Caique-character9(red).png";
 import CaiqueAnmPicWhite from "../../../../public/assets/caique_anime/Caique-character(yellow).png";
 import Image from 'next/image';
 import { GiAbstract066 } from "react-icons/gi";
