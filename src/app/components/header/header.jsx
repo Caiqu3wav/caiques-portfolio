@@ -10,7 +10,7 @@ import { useTheme } from '@/app/context/ThemeContext';
 
 function Header(){
   const [isActive, setIsActive] = useState(false);
-  const { darkMode } = useTheme();
+  const [scrollOpacity, setScrollOpacity] = useState(1)
 
   const sideList = [
       {
@@ -36,28 +36,21 @@ function Header(){
   }
 
   useEffect(() => {
-      const handleEscKeyPress = (e) => {
-          if (e.keycode === 27 && isActive) {
-              setIsActive(false);
-          }
-      };
+    const handleScroll = () => {
+      const scrollY = window.scrollY
+      const maxScroll = 200
+      const opacity = Math.max(0, Math.min(1, 1 - scrollY / maxScroll))
+      setScrollOpacity(opacity)
+    }
 
-      if (isActive) {
-          document.body.style.setProperty("overflow", "hidden");
-      }else {
-          document.body.style.setProperty("overflow", "auto");
-      }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
-      document.addEventListener("keydown", handleEscKeyPress);
-      
-      return () => {
-          document.removeEventListener("keydown", handleEscKeyPress);
-      };
-  }, [isActive]);
 
     return (
         <div>
-            <header className='flex justify-between bg-orange-400 dark:bg-gradient-to-b from-red-700 to-black'>
+            <header className='flex justify-between bg-gradient-to-b from-orange-400 dark:from-red-700 to-transparent'>
              <Image src={Caique_wav_logo} className='w-[100px]' alt='caique_wav logo'/>
                 <nav className=''>
                     <ul className='midtw:hidden'>

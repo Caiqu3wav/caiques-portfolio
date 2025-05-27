@@ -9,7 +9,6 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { FaNode, FaPython, FaFileDownload, FaReact } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { SiTypescript, SiNestjs, SiMongodb, SiPostgresql } from "react-icons/si";
-import { SiPrisma } from "react-icons/si";
 import { gsap } from 'gsap';
 import { GrDocker } from "react-icons/gr";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -88,9 +87,9 @@ function About(){
   const handleDownloadClick = () => {
     const downloadLink = document.createElement('a');
     
-    downloadLink.href = '/assets/caique-curriculo-fullstack.pdf';
+    downloadLink.href = '/assets/cvc_dev_caique_pt.pdf';
 
-    downloadLink.download = 'caique-curriculo-fullstack.pdf';
+    downloadLink.download = 'cvc_dev_caique_pt.pdf';
 
     document.body.appendChild(downloadLink);
 
@@ -102,9 +101,9 @@ function About(){
   const handleDownloadClickEnglish = () => {
     const downloadLink = document.createElement('a');
     
-    downloadLink.href = '/assets/currcaiq-fullstack-og-eng.pdf';
+    downloadLink.href = '/assets/cvc_dev_caique_en.pdf';
 
-    downloadLink.download = 'currcaiq-fullstack-og-eng.pdf';
+    downloadLink.download = 'cvc_dev_caique_en.pdf';
 
     document.body.appendChild(downloadLink);
 
@@ -118,11 +117,10 @@ function About(){
     { icon: <TbBrandNextjs className="skills-logo text-yellow-500" />, label: 'Next.JS' },
     { icon: <BiLogoCPlusPlus className="skills-logo text-red-600" />, label: 'C++' },
     { icon: <FaNode className="skills-logo text-green-600" />, label: 'Node.JS' },
-    { icon: <SiMongodb className="skills-logo text-green-600" />, label: 'MongoDB' },
-    { icon: <BiLogoGoLang className="skills-logo text-blue-500" />, label: 'Go' },
-    { icon: <FaPython className="text-[50px] text-yellow-400" />, label: 'Python' },
     { icon: <FaJava className="skills-logo text-red-600" />, label: 'Java' },
-    { icon: <SiNestjs className="skills-logo text-red-500" />, label: 'Nest.JS' },
+    { icon: <FaPython className="text-[50px] text-yellow-400" />, label: 'Python' },
+    { icon: <BiLogoGoLang className="skills-logo text-blue-500" />, label: 'Go' },
+  { icon: <SiNestjs className="skills-logo text-red-500" />, label: 'Nest.JS' },
     { icon: <SiTypescript className="skills-logo text-blue-500" />, label: 'TypeScript' },
     { icon: <SiPostgresql className="skills-logo bg-blue-600 rounded-full px-1 text-orange-400" />, label: 'PostgreSql' },
     { icon: <GrDocker className="skills-logo text-blue-500" />, label: 'Docker' },
@@ -163,7 +161,7 @@ function About(){
               <MdOutlineMoreTime className="mt-2 dark:text-red-800 text-orange-700" /><p className='midfour:text-[12px]'>Full-time/Freelancer</p>
               </div>
               <div className="flex gap-3 midfour:gap-1">
-              <PiWhatsappLogoDuotone className="mt-2 dark:text-red-800 text-orange-700" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/12996246050">(12) 996246050</a>
+              <PiWhatsappLogoDuotone className="mt-2 dark:text-red-800 text-orange-700" /><a className="text-white underline underline-offset-4 midfour:text-[12px]" target='_blank' href=" https://wa.me/14996685131">(14) 996685131</a>
               </div>
               <div className='flex flex-col gap-2 majorthree1:flex-row midfour:flex-col'>
               <div className='flex gap-3 items-center'>
@@ -208,8 +206,8 @@ function About(){
       <h1 className='text-orange-600 dark:text-red-600 font-bold'>Cartas na manga</h1>
       <h2 className='text-sm'>(Minhas principais stacks)</h2>
       <div className='grid grid-cols-4 gap-4'>
-        {skills.map(skill => (
-          <div className='flex flex-col items-center text-center'>
+        {skills.map((skill, i) => (
+          <div key={i} className='flex flex-col items-center text-center'>
             {skill.icon}
            <p className={`midfour:text-[13px] border-solid border-b-2 ${darkMode ? 'border-red-700' : 'border-yellow-500'} rounded-md`}>{skill.label}</p>
           </div>
